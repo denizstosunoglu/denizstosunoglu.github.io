@@ -1,83 +1,321 @@
-<div align="center">
-  <!-- Estetik Başlık Banner -->
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=200&section=header&text=Deniz%20Tosunoğlu&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Chemical%20Engineer%20|%20Transport%20Planner%20|%20AI%20Specialist&descSize=20&descAlignY=60" width="100%" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deniz Tosunoğlu | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #10b981; /* Şık Emerald Yeşili */
+            --accent-hover: #059669;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
 
-  <br/>
+        /* Dark Mode Sevenler İçin Uyumlu Altyapı */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-main: #f8fafc;
+                --text-muted: #94a3b8;
+                --card-bg: #1e293b;
+                --border: #334155;
+            }
+        }
 
-  <!-- Dinamik Yazı -->
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=2ecc71&center=true&vCenter=true&width=600&lines=Supply+Chain+Optimization;Data-Driven+Decision+Making;Global+Logistics+Network;Future+Stevens+Alumni" alt="Typing SVG" />
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  <br/>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-  <!-- LinkedIn & Ziyaretçi Sayacı -->
-  <a href="https://linkedin.com/in/denizstosunoglu" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  
-  <img src="https://komarev.com/ghpvc/?username=denizstosunoglu&label=PROFILE+VIEWS&color=2ecc71&style=for-the-badge" alt="Views" />
-</div>
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
 
----
+        /* Header Kısmı */
+        header {
+            margin-bottom: 48px;
+            text-align: left;
+        }
 
-### 🚀 Hakkımda
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 8px;
+        }
 
-<p align="left">
-  Merhaba! Ben <b>Deniz Tosunoğlu</b>. Kimya Mühendisliği altyapımı, DHL Supply Chain bünyesindeki küresel lojistik deneyimimle birleştirerek tedarik zinciri süreçlerini modernize ediyorum. 
-  Şu anda Corteva operasyonları için <b>Global Transport Planner</b> olarak çalışırken, manuel süreçleri yapay zeka ve otomasyonla dönüştürmeye odaklanıyorum.
-</p>
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
 
-*   🎓 **Yeditepe Üniversitesi** - Kimya Mühendisliği Mezunu
-*   🎓 **Anadolu Üniversitesi** - MIS Öğrencisi
-*   🏫 **Stevens Institute of Technology** - MS Business Analytics & AI (Gelecek Dönem)
-*   🎯 **Hedef:** Global lojistik ağlarını veri ve AI ile optimize etmek.
+        .links {
+            display: flex;
+            gap: 16px;
+        }
 
----
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
 
-### 🛠️ Teknolojik Yetkinlikler
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,sql,excel,git,github,vscode" />
-</div>
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
 
-<br/>
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+        }
 
-| Alan | Uzmanlık ve Araçlar |
-| :--- | :--- |
-| **Lojistik & ERP** | SAP S/4HANA (PP, Manufacturing, EWM), Global Transport Planning |
-| **Veri & Yazılım** | Python, SQL, Business Analytics, Process Automation |
-| **Sertifikasyon** | SAP Certified Application Associate, Stanford Code in Place |
+        .btn-secondary:hover {
+            background-color: var(--border);
+        }
 
----
+        /* Bölümler */
+        section {
+            margin-bottom: 40px;
+        }
 
-### 📊 GitHub Insights
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+        }
 
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=denizstosunoglu&show_icons=true&theme=tokyonight&locale=tr&hide_border=true" height="150" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=denizstosunoglu&layout=compact&theme=tokyonight&hide_border=true" height="150" />
-      </td>
-    </tr>
-  </table>
+        p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=denizstosunoglu&theme=tokyonight&hide_border=true" width="100%" />
-</div>
+        /* Modern Kart Yapısı */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
 
----
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
 
-### 📬 Benimle İletişime Geçin
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
 
-<div align="center">
-  <p>Lojistik otomasyonu, veri analitiği veya AI projeleri üzerine konuşmak isterseniz ulaşabilirsiniz.</p>
-  
-  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://linkedin.com/in/denizstosunoglu)
-</div>
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
 
-<br/>
+        .card-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/render?type=slice&color=auto&height=100&section=footer" width="100%" />
-</div>
+        .card-subtitle {
+            font-size: 0.95rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .card-content {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .card-content ul {
+            margin-left: 18px;
+            margin-top: 8px;
+        }
+
+        .card-content li {
+            margin-bottom: 4px;
+        }
+
+        /* Yetkinlik Etiketleri */
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background-color: var(--border);
+            color: var(--text-main);
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <h1>Deniz Tosunoğlu</h1>
+            <div class="subtitle">Chemical Engineer | Global Transport Planner | AI & Data Enthusiast</div>
+            <div class="links">
+                <a href="https://linkedin.com/in/denizstosunoglu" target="_blank" class="btn btn-primary">LinkedIn</a>
+                <a href="https://github.com/denizstosunoglu" target="_blank" class="btn btn-secondary">GitHub</a>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I combine a solid background in Chemical Engineering with international logistics operations management at DHL Supply Chain. My primary professional focus lies in optimizing global supply chains and transforming manual operational tasks into seamless, end-to-end automated workflows using data analytics and artificial intelligence.
+            </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">DHL Supply Chain</div>
+                    <div class="card-date">2025 - Present</div>
+                </div>
+                <div class="card-subtitle">Global Transport Planner (Corteva Operations)</div>
+                <div class="card-content">
+                    Managing international transportation lines, distribution planning, and data-driven supply chain tracking. Focusing on reducing manual errors through data analytics.
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Stevens Institute of Technology</div>
+                    <div class="card-date">Incoming</div>
+                </div>
+                <div class="card-subtitle">M.Sc. Business Analytics & AI</div>
+                <div class="card-content">
+                    Advanced study focusing on applying predictive modeling, optimization, and machine learning to large-scale business and enterprise operational networks.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Yeditepe University</div>
+                    <div class="card-date">Graduate</div>
+                </div>
+                <div class="card-subtitle">B.Sc. Chemical Engineering</div>
+                <div class="card-content">
+                    Core engineering principles, process design, data analysis, and mathematical modeling of complex industrial systems.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Anadolu University</div>
+                    <div class="card-date">Ongoing</div>
+                </div>
+                <div class="card-subtitle">B.Sc. Management Information Systems (MIS)</div>
+                <div class="card-content">
+                    Integrating information technologies with business management, database structures, and systems engineering.
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Skills & Expertise</h2>
+            <div class="card">
+                <div class="card-title" style="font-size: 1rem; margin-bottom: 8px;">Core Technologies</div>
+                <div class="tag-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL / MySQL</span>
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">Process Automation</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Advanced Excel</span>
+                </div>
+                
+                <div class="card-title" style="font-size: 1rem; margin-top: 20px; margin-bottom: 8px;">Enterprise Systems</div>
+                <div class="tag-container">
+                    <span class="tag">SAP S/4HANA PP</span>
+                    <span class="tag">SAP S/4HANA EWM</span>
+                    <span class="tag">Supply Chain Optimization</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Deniz Tosunoğlu. Built with clean code and a focus on simplicity.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
