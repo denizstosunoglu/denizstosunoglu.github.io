@@ -2,7 +2,7 @@
 
 **Chemical Engineer | Global Transport Planner | AI & Data Enthusiast**
 
-[LinkedIn Profile](https://linkedin.com/in/denizstosunoglu) • [Portfolio Website](https://denizstosunoglu.github.io/)
+[LinkedIn Profile]([https://www.linkedin.com/in/deniz-tosunoglu/]) • [Portfolio Website](https://denizstosunoglu.github.io/)
 
 ---
 
