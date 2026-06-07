@@ -8,9 +8,9 @@
 
 ### 🧑‍💻 About Me
 
-I combine my solid foundation in **Chemical Engineering** with extensive experience in international logistics operations management (Corteva) at **DHL Supply Chain**. My professional focus is centered on optimizing global supply chains and digitalizing manual warehouse and transport processes end-to-end through artificial intelligence, data analytics, and automation solutions.
+I combine my solid foundation in **Chemical Engineering** with extensive experience in international logistics operations management. My professional focus is centered on optimizing global supply chains and digitalizing manual warehouse and transport processes end-to-end through artificial intelligence, data analytics, and automation solutions.
 
-*   💼 **Current Role:** Global Transport Planner @ DHL Supply Chain
+*   💼 **Current Role:** Global Transport Planner 
 *   🎓 **Education:** Yeditepe University (B.Sc. Chemical Engineering) | Anadolu University (Management Information Systems)
 *   🏫 **Future Plans:** Incoming MS Business Analytics & AI Student @ Stevens Institute of Technology
 
